@@ -1,0 +1,7 @@
+{
+  "item.musketmod.musket": "Rifled Musket",
+  "item.musketmod.musket.tooltip": "Deals 7 hearts of damage. Hold right-click for 5 seconds to reload and fire.",
+  "item.musketmod.musket.one_per_hotbar": "You can only carry one musket in your hotbar or offhand!",
+  "item.musketmod.musket_ball": "Musket Ball",
+  "entity.musketmod.musket_ball": "Musket Ball"
+}
