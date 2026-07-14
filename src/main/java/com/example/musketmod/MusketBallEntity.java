@@ -25,8 +25,8 @@ public class MusketBallEntity extends ThrowableItemProjectile {
 
     @Override
     protected double getDefaultGravity() {
-        // Flatter trajectory than a snowball, like a bullet
-        return 0.01;
+        // Almost flat trajectory over normal fighting range, like a bullet
+        return 0.005;
     }
 
     @Override

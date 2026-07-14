@@ -4,13 +4,18 @@ Adds a **Rifled Musket** and **Musket Balls** to Minecraft 1.21.1.
 
 ## Features
 - **Rifled Musket** — deals **7 hearts (14 damage)** per shot
-- **5 second reload** — hold right-click for 5 seconds to reload and fire
-- **Musket Ball** — the musket's ammo, fired as a fast, flat-trajectory projectile
+- **Crossbow-style loading** — hold right-click for 5 seconds to ram a ball home. The musket
+  then *stays loaded* until you pull the trigger, even if you swap slots. Click to fire instantly.
+- **Custom 3D model** — barrel, walnut stock, brass bands and trigger guard. The hammer visibly
+  sits at half-cock while loading and springs back to full cock once loaded.
+- **Ammo HUD** — an `Ammo [1/1]` readout above the hotbar, your remaining ball count, and a
+  reload progress bar while loading.
+- **Muzzle smoke and flash** on firing, with a flat, fast bullet trajectory
 - Musket has 256 durability and appears in the Combat creative tab
 - **One musket per hotbar + offhand** — any extra muskets are automatically moved to your main inventory (or dropped if it is full)
 
 ## Crafting
-**Rifled Musket** (shaped, 3x3 grid):
+**Rifled Musket** (shaped):
 - Diamond Block in the center
 - Gold Block to the left of the center
 - Stick in the bottom-right
@@ -19,15 +24,9 @@ Adds a **Rifled Musket** and **Musket Balls** to Minecraft 1.21.1.
 - 1 Gunpowder + 1 Iron Ingot -> 1 Musket Ball
 
 ## Building
-Requires Java 21.
+Requires Java 21. Run `gradle build` (or `gradlew build`); the jar lands in `build/libs/`.
 
-```
-./gradlew build        # (or gradlew.bat build on Windows)
-```
+This repo also builds automatically on GitHub via `.github/workflows/build.yml` —
+push, open the **Actions** tab, and download the `musketmod-jar` artifact.
 
-The finished mod jar will be in `build/libs/musketmod-1.0.0.jar`.
-Drop it into your NeoForge 1.21.1 `mods` folder.
-
-To test in a dev environment: `./gradlew runClient`
-
-If you don't have the Gradle wrapper, install Gradle 8.8+ and run `gradle wrapper` once in this folder first.
+Drop the jar into a NeoForge 1.21.1 `mods` folder.

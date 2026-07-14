@@ -701,13 +701,13 @@
     },
     {
       "from": [
-        15.4,
+        16.6,
         10.9,
         8.6
       ],
       "to": [
-        16.4,
-        12.4,
+        17.6,
+        13.3,
         9.3
       ],
       "faces": {
@@ -1389,19 +1389,5 @@
         0.45
       ]
     }
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "musketmod:loading": 1
-      },
-      "model": "musketmod:item/musket_loading"
-    },
-    {
-      "predicate": {
-        "musketmod:loaded": 1
-      },
-      "model": "musketmod:item/musket_loaded"
-    }
-  ]
+  }
 }
